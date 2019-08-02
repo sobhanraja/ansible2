@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+   - name: ping my node
+     apt: 
+      name: tree
+      state: present
